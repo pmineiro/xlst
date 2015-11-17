@@ -8,7 +8,7 @@ pure matlab implementation (no mex required).
 Notes
 ----------
 
-  * The routine xhat() corresponds to the eigenvalue problem associated with learning a tree node.  For multiclass problems Y<sup>&#x22A4;</sup>Y is diagonal which simplifies things a bit.
+  * The routine `xhat()` corresponds to the eigenvalue problem associated with learning a tree node.  For multiclass problems Y<sup>&#x22A4;</sup>Y is diagonal which simplifies things a bit.
   * The tree is a label filter which can be coupled with an arbitrary classifier.  In this case we share a 50-dimensional embedding of the original features across all nodes, and then learn a per-node classifier (over the node candidates).  This is a compromise between distinct classifiers per node and the same classifier at each node.
 
 Thanks
