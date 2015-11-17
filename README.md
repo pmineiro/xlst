@@ -3,9 +3,9 @@ xlst
 [eXtreme Learning Spectral Trees](http://arxiv.org/abs/1511.03260)
 
 Subdirectories:
- * [matlab](matlab): matlab code, including mex.  you **must** compile the mex here before proceeding.
- * [aloi](aloi): [aloi](http://aloi.science.uva.nl/) is the mnist of extreme learning.  if you want a quick demo, this one only takes a few minutes.
- * [odp](odp): reproduce the [odp](https://www.dmoz.org/) multiclass dataset results.
- * [lshtc](lshtc): reproduce the [lshtc](https://www.kaggle.com/c/lshtc) multilabel dataset results.
- * [amazon](amazon): reproduce the [amazon product metadata](http://snap.stanford.edu/data/amazon/productGraph/) multilabel dataset results.
+ * [aloi](aloi): [Aloi](http://aloi.science.uva.nl/) is the mnist of extreme learning.  If you want a quick demo that doesn't require mex, this one only takes a few minutes.
+ * [matlab](matlab): Matlab code, including mex.  You **must** compile the mex here before attempting the larger data sets.
+ * [odp](odp): Reproduce the [odp](https://www.dmoz.org/) (multiclass) dataset results.
+ * [lshtc](lshtc): Reproduce the [lshtc](https://www.kaggle.com/c/lshtc) (multilabel) dataset results.
+ * [amazon](amazon): Reproduce the [amazon product metadata](http://snap.stanford.edu/data/amazon/productGraph/) (multilabel) dataset results.
 
