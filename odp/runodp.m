@@ -306,14 +306,9 @@ function res=xhattree2(xtic,ytic,depth,s,smin,cumulp,nodeid)
     topy=topy(1:s);
     res.topy=topy;
   
-%     if (depth == 0 && s > smin)
-%       fprintf('depth=%u nodeid=%u n=%u s=%u sumy=[%u %u]\n',...
-%               depth,nodeid,sum(cumulp(cond)),s,sumy(topy(1)),sumy(topy(end)))
-%     end
-  
     if (depth > 0 && s > smin)
       [w,lambda]=xhat(xtic,ytic,cumulp,cond);
-      if (lambda > 0) % TODO: figure out "correct" minimum
+      if (lambda > 0)
         thisdp=dmsm(w',xtic(:,cond));
         b=weightedmedian(cumulp(cond),thisdp);
         sigma=sqrt(lambda/sum(cumulp(cond)));
