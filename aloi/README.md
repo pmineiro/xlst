@@ -16,4 +16,4 @@ Notes
 
 Thanks
 ----------
-aloi.mat is derived from data provided by John Langford.
+aloi.mat is derived from data provided by John Langford from [Logarithmic Time Online Multiclass prediction](http://arxiv.org/abs/1406.1822).
