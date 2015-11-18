@@ -24,7 +24,7 @@ function res=runaloi()
 
   tic
   res=endtoendtree(xttic,yttic,xstic,ystic,...
-                   struct('depth',13,'s',25,'smin',24,'rank',50,...
+                   struct('depth',14,'s',25,'smin',24,'rank',50,...
                           'lambda',1e-2,'eta',0.25,'alpha',0.8,'decay',0.999,'passes',250, ...
                           'monfunc', @(res) ...
                             true)); %accfunc(res,xttic,yttic,xstic,ystic)));
@@ -402,3 +402,17 @@ function res=xhattree2(xtic,ytic,depth,s,smin,cumulp,nodeid)
     end
   end
 end
+
+%{
+ans = 
+
+            root: [1x1 struct]
+          oasone: [128x50 double]
+          oastwo: {1x32768 cell}
+            bias: {1x32768 cell}
+         predict: @(x)predict(res,x)
+    trainfiltacc: 0.9808
+     testfiltacc: 0.9652
+        trainacc: 0.9600
+         testacc: 0.9103
+%}
