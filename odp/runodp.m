@@ -3,7 +3,7 @@ function res=runodp()
   addpath(fullfile(mypath,'..','matlab'));
   
   % change this if you want, e.g., to an SSD drive location
-  mmapprefix='d:\d_drive\';
+  mmapprefix=cd;
 
   randn('seed',90210);
   rand('seed',8675309);
