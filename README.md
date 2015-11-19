@@ -7,4 +7,3 @@ Subdirectories:
  * [matlab](matlab): Matlab code, including mex.  You **must** compile the mex here before attempting the larger data sets.
  * [odp](odp): Reproduce the [odp](https://www.dmoz.org/) (multiclass) dataset results.
  * [lshtc](lshtc): Reproduce the [lshtc](https://www.kaggle.com/c/lshtc) (multilabel) dataset results.
- * [amazon](amazon): Reproduce the [amazon product metadata](http://snap.stanford.edu/data/amazon/productGraph/) (multilabel) dataset results.
