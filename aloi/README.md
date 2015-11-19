@@ -10,7 +10,7 @@ the larger datasets, but the code is more intelligible.
 Notes
 ----------
 
-  * The routine `xhat()` corresponds to the eigenvalue problem associated with learning a tree node.  For multiclass problems Y<sup>&#x22A4;</sup>Y is diagonal which simplifies things a bit.
+  * The routine `xhat()` corresponds to the eigenvalue problem associated with learning a tree node.  For multiclass problems Y<sup>&#x22A4;</sup>Y is diagonal which simplifies things a bit.  For a multilabel version of the `xhat()` routine see [lshtc](../lshtc/runlshtc.m).
   * The tree is a label filter which can be coupled with an arbitrary classifier.  In this case we share a 50-dimensional embedding of the original features across all nodes, and then learn a per-node classifier (over the node candidates).  This is a compromise between distinct classifiers per node and the same classifier at each node.
   * On my desktop it takes about 15 minutes to build a depth 14 tree, which has a test recall of 96.5%.  Then it takes about 30 minutes to train the underlying classifier.  The combined model gets 90.7% test accuracy.
 

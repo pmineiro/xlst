@@ -325,6 +325,9 @@ function [w,lambda]=xhat(xtic,ytic,cumulp,mask)
   % and also a specific instantion of "canonical ridge analysis"
   % http://aiolos.um.savba.sk/~roman/Papers/pls_book06.pdf (slide 12)
 
+  % NB: this version of xhat is only appropriate for multiclass
+  %     for a multilabel variant see ../lshtc/runlshtc.m
+ 
   p=10;
 
   xticmask=xtic(:,mask);
