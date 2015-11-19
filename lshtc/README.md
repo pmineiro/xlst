@@ -11,7 +11,7 @@ Notes
   * The underlying classifier only uses the node identifier to adjust the bias of the (independent per-class) logistic regression, similar to the [odp](../odp/runodp.m) script.
   * The underlying classifier is trained using hogwild SGD.  Matlab will be completely unresponsive during a training pass as the interpreter is stuck waiting for the threads.
   * I store the model in an mmap in case there is not enough RAM.  On a machine with at least 96Gb of RAM, an SSD, and an appropriately tuned page cache this should not generate any appreciable I/O load.  Otherwise, the script will run, but more slowly.
-  * On my desktop it takes about 10 hours to build a depth 14 tree, which has a test recall of 50.4%.  Then it takes about 5 hours to do a training pass.  25 training passes leads to 19.5% test accuracy.
+  * On my desktop it takes about 2 days to build a depth 14 tree, which has a test recall of 72%.  Then it takes about 2 hours to do a training pass.  After 50 training passes the rate of improvement in test metrics has really slowed down (I lack the patience to find out when overfitting starts setting in).
 
 Thanks
 ----------
