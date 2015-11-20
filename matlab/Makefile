@@ -4,7 +4,7 @@ ifeq (,$(wildcard /proc/cpuinfo))
 NUM_THREADS?=8
 all: $(patsubst %.cpp,%.mexw64,$(wildcard *.cpp))
 else
-NUM_THREADS?=$(shell grep 'core id' /proc/cpuinfo | sort -u | wc -l)
+NUM_THREADS?=$(shell grep -e 'physical id' -e 'core id' /proc/cpuinfo | perl -pe 'chomp; $$m=<>; $$_="$$_$$m"; ' | sort -u | wc -l)
 all: $(patsubst %.cpp,%.mexa64,$(wildcard *.cpp))
 endif
 
